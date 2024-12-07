@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div id="home-tableau" class="tableau">
+                    <h3 class="color-white">HOME</h3>
+                    <div class="black-bg">
+                        <p id="home-score" class="font-lg">0</p>
+                    </div>
+                    <div>
+                        <button class="btn color-blue" onclick="updateHome(1)">+1</button>
+                        <button class="btn color-blue" onclick="updateHome(2)">+2</button>
+                        <button class="btn color-blue" onclick="updateHome(3)">+3</button>
+                    </div>
+                </div>
+                <div id="guest-tableau" class="tableau">
+                    <h3 class="color-white">GUEST</h3>
+                    <div class="black-bg">
+                        <p id="guest-score" class="font-lg">0</p>
+                    </div>
+                    <div>
+                        <button class="btn color-blue" onclick="updateGuest(1)">+1</button>
+                        <button class="btn color-blue" onclick="updateGuest(2)">+2</button>
+                        <button class="btn color-blue" onclick="updateGuest(3)">+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <button class="reset-btn" onclick="reset()">Reset</button>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
